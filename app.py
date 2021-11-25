@@ -103,7 +103,7 @@ def listAll():
         })
 
 
-@app.route("/delete", methods=["DELETE"])
+@app.route("/delete", methods=["POST"])
 def delete():
     data = request.get_json()
     taskid = data["id"]
